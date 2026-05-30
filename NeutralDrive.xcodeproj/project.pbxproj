@@ -6,14 +6,63 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5AEA73DF2EE442FD00614CE3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEA73DE2EE442FD00614CE3 /* UniformTypeIdentifiers.framework */; };
+		5AEA73EB2EE442FD00614CE3 /* NeutralDriveExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5AEA73DC2EE442FD00614CE3 /* NeutralDriveExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AEA73E92EE442FD00614CE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEA73C22EE4418D00614CE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AEA73DB2EE442FD00614CE3;
+			remoteInfo = NeutralDriveExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AEA73F02EE442FD00614CE3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5AEA73EB2EE442FD00614CE3 /* NeutralDriveExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5AEA73CA2EE4418D00614CE3 /* NeutralDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeutralDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AEA73DC2EE442FD00614CE3 /* NeutralDriveExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NeutralDriveExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AEA73DE2EE442FD00614CE3 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5AEA73EC2EE442FD00614CE3 /* Exceptions for "NeutralDriveExtension" folder in "NeutralDriveExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5AEA73DB2EE442FD00614CE3 /* NeutralDriveExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5AEA73CC2EE4418D00614CE3 /* NeutralDrive */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NeutralDrive;
+			sourceTree = "<group>";
+		};
+		5AEA73E02EE442FD00614CE3 /* NeutralDriveExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5AEA73EC2EE442FD00614CE3 /* Exceptions for "NeutralDriveExtension" folder in "NeutralDriveExtension" target */,
+			);
+			path = NeutralDriveExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +75,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AEA73D92EE442FD00614CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEA73DF2EE442FD00614CE3 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				5AEA73CC2EE4418D00614CE3 /* NeutralDrive */,
+				5AEA73E02EE442FD00614CE3 /* NeutralDriveExtension */,
+				5AEA73DD2EE442FD00614CE3 /* Frameworks */,
 				5AEA73CB2EE4418D00614CE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +100,17 @@
 			isa = PBXGroup;
 			children = (
 				5AEA73CA2EE4418D00614CE3 /* NeutralDrive.app */,
+				5AEA73DC2EE442FD00614CE3 /* NeutralDriveExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5AEA73DD2EE442FD00614CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AEA73DE2EE442FD00614CE3 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +123,12 @@
 				5AEA73C62EE4418D00614CE3 /* Sources */,
 				5AEA73C72EE4418D00614CE3 /* Frameworks */,
 				5AEA73C82EE4418D00614CE3 /* Resources */,
+				5AEA73F02EE442FD00614CE3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5AEA73EA2EE442FD00614CE3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5AEA73CC2EE4418D00614CE3 /* NeutralDrive */,
@@ -69,6 +139,28 @@
 			productName = NeutralDrive;
 			productReference = 5AEA73CA2EE4418D00614CE3 /* NeutralDrive.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5AEA73DB2EE442FD00614CE3 /* NeutralDriveExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AEA73ED2EE442FD00614CE3 /* Build configuration list for PBXNativeTarget "NeutralDriveExtension" */;
+			buildPhases = (
+				5AEA73D82EE442FD00614CE3 /* Sources */,
+				5AEA73D92EE442FD00614CE3 /* Frameworks */,
+				5AEA73DA2EE442FD00614CE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5AEA73E02EE442FD00614CE3 /* NeutralDriveExtension */,
+			);
+			name = NeutralDriveExtension;
+			packageProductDependencies = (
+			);
+			productName = NeutralDriveExtension;
+			productReference = 5AEA73DC2EE442FD00614CE3 /* NeutralDriveExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +173,9 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					5AEA73C92EE4418D00614CE3 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					5AEA73DB2EE442FD00614CE3 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -100,12 +195,20 @@
 			projectRoot = "";
 			targets = (
 				5AEA73C92EE4418D00614CE3 /* NeutralDrive */,
+				5AEA73DB2EE442FD00614CE3 /* NeutralDriveExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5AEA73C82EE4418D00614CE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AEA73DA2EE442FD00614CE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +225,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AEA73D82EE442FD00614CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AEA73EA2EE442FD00614CE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AEA73DB2EE442FD00614CE3 /* NeutralDriveExtension */;
+			targetProxy = 5AEA73E92EE442FD00614CE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5AEA73D32EE4418D00614CE3 /* Debug */ = {
@@ -248,9 +366,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = NeutralDrive/NeutralDrive.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8895495795;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -278,9 +399,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = NeutralDrive/NeutralDrive.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8895495795;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -297,6 +421,66 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AEA73EE2EE442FD00614CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NeutralDriveExtension/NeutralDriveExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8895495795;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeutralDriveExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NeutralDriveExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutralbase.NeutralDrive.NeutralDriveExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AEA73EF2EE442FD00614CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NeutralDriveExtension/NeutralDriveExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8895495795;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeutralDriveExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NeutralDriveExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutralbase.NeutralDrive.NeutralDriveExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +504,15 @@
 			buildConfigurations = (
 				5AEA73D62EE4418D00614CE3 /* Debug */,
 				5AEA73D72EE4418D00614CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AEA73ED2EE442FD00614CE3 /* Build configuration list for PBXNativeTarget "NeutralDriveExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AEA73EE2EE442FD00614CE3 /* Debug */,
+				5AEA73EF2EE442FD00614CE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
